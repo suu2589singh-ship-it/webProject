@@ -5,7 +5,7 @@ const sendMessage=require("../UserControler/Massage")
 const checkauth = require("../UserControler/Auth")
 const logout = require("../UserControler/Logout.")
 const SaveData=require("../UserControler/Alldata")
-Routers=express.Router()
+const=Routers=express.Router()
 
 Routers.post("/login",userlogin)
 Routers.post("/Register",Register)
