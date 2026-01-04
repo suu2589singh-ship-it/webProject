@@ -3,7 +3,7 @@ const alldata=require("./Model/Alldatabase")
 
 
 
-const SaveData=async(req,res)=>{
+const saveData=async(req,res)=>{
     const{Order,Address,Paymentmethod}=req.body
     const all= await alldata.create({
         Address:Address,
@@ -18,4 +18,4 @@ const SaveData=async(req,res)=>{
 }
 
 
-module.exports=SaveData
+module.exports=saveData
