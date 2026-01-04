@@ -3,7 +3,7 @@ const userlogin=require("../UserControler/Userdata")
 const register=require("../UserControler/Register")
 const sendMessage=require("../UserControler/Massage")
 const checkauth = require("../UserControler/Auth")
-const logout = require("../UserControler/Logout")
+const logout = require("../UserControler/Logout.")
 const saveData=require("../UserControler/Alldata")
 const Routers=express.Router()
 
