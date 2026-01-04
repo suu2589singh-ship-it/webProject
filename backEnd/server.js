@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express()
-const Routers=require("./UserRouter/UserRoute.js")
+const routers=require("./UserRouter/UserRoute.js")
 const cors =require("cors")
 const cookieParser = require("cookie-parser");
 const connectdb=require("./UserControler/Model/database.js")
@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
     res.send("hellow")
 });
 
-app.use('/api/user',Routers)
+app.use('/api/user',routers)
 
 
 
