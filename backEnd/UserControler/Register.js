@@ -1,7 +1,7 @@
 const bcrypt=require('bcrypt')
 const  jwt=require("jsonwebtoken")
 const User=require('./Model/User');
-const Register=async (req,res)=>{
+const register=async (req,res)=>{
     try{
         const{email,password,username}=req.body
         const user=await User.findOne({email});
@@ -39,4 +39,4 @@ const Register=async (req,res)=>{
     }
 };
 
-module.exports=Register
+module.exports=register
