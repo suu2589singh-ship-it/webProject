@@ -5,15 +5,15 @@ const sendMessage=require("../UserControler/Massage")
 const checkauth = require("../UserControler/Auth")
 const logout = require("../UserControler/Logout.")
 const saveData=require("../UserControler/Alldata")
-const Routers=express.Router()
+const routers=express.Router()
 
-Routers.post("/login",userlogin)
-Routers.post("/Register",register)
-Routers.post("/massage",sendMessage)
-Routers.get("/checkauth",checkauth)
-Routers.post("/logout",logout)
-Routers.post("/Savedata",saveData)
+routers.post("/login",userlogin)
+routers.post("/Register",register)
+routers.post("/massage",sendMessage)
+routers.get("/checkauth",checkauth)
+routers.post("/logout",logout)
+routers.post("/Savedata",saveData)
 
 
 
-module.exports=Routers
+module.exports=routers
