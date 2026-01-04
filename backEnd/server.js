@@ -9,7 +9,7 @@ const dotenv=require("dotenv").config()
 app.use(express.urlencoded({extended:true}))
 connectdb();
 app.use(cors({credentials:true,origin:"https://subtle-treacle-2b94c8.netlify.app",withCredentials:true,methods:["GET","POST","PUT","DELETE","OPTIONS"]}));
-app.options("*",cors())
+app.options("(.*)", cors())
 app.use(express.json());
 app.use(cookieParser())
 app.get("/",(req,res)=>{
