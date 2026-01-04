@@ -11,9 +11,9 @@ connectdb();
 app.use(cors({credentials:true,origin:true,withCredentials:true}))
 app.use(express.json());
 app.use(cookieParser())
-app.get("/",(req,res)=>{[
+app.get("/",(req,res)=>{
     res.send("hellow")
-]});
+});
 
 app.use('/api/user',Routers)
 
